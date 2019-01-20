@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: kafka.localtest.me:9093
+          zkNodes: zookeeper.localtest.me:2181
+      bindings:
+        paymentChannel:
+          destination: payments
