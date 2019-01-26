@@ -6,8 +6,7 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: kafka.localtest.me:9093
-          zkNodes: zookeeper.localtest.me:2181
+          brokers: kafka.localtest.me:9092
       bindings:
         paymentChannel:
           destination: payments
